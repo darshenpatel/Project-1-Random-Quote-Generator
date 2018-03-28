@@ -39,13 +39,13 @@ function printQuote () {
 
 //function that randomly changes the background color
 function randomBackgroundColor () {
-  var r = Math.floor(Math.random() * 256);
-  var b = Math.floor(Math.random() * 256);
-  var g = Math.floor(Math.random() * 256);
-  var backGroundColor= "rgb(" + r + "," + b + "," + g + ")";
+  let red = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let backGroundColor= "rgb(" + red + "," + blue + "," + green + ")";
   document.body.style.background = backGroundColor;
 }
 
-//how to reset time after each click?
+//what would be the best way to rest the timer if I were to hover over the button?
 //also would this be better to add in the HTML file or leave here?
-setInterval(function(){ printQuote() }, 10000);
+let timer = setInterval(function(){ printQuote() }, 10000);
