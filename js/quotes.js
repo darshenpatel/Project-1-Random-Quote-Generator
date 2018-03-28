@@ -1,4 +1,4 @@
-//The quotes.js file contains an array of objects that hold information of 10 quotes we link back to the HTML
+//The quotes.js file contains an array of objects that hold information of 15 quotes we link back to the HTML
 const quotes = [
 
 //Quote Object #1
