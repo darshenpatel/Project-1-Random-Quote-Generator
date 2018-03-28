@@ -23,6 +23,10 @@ function printQuote () {
     html += '<span class="year">' + randomQuote.year + '</span>';
   }
 
+  if (randomQuote.categorization) {
+    html += '<h1>' + randomQuote.categorization + '</h1>';
+  }
+
   let div = document.getElementById('quote-box').innerHTML = html;
   return html;
 
@@ -37,5 +41,5 @@ function randomBackgroundColor () {
 }
 
 //how to reset time after each click?
-
+//also would this be better to add in the HTML file or leave here?
 setInterval(function(){ printQuote() }, 10000);
