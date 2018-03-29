@@ -46,6 +46,10 @@ function randomBackgroundColor () {
   document.body.style.background = backGroundColor;
 }
 
-//what would be the best way to rest the timer if I were to hover over the button?
-//also would this be better to add in the HTML file or leave here?
+//refresh the quote after a set amount of time --- 10 seconds
 let timer = setInterval(function(){ printQuote() }, 10000);
+
+//stops the interval time we set above
+let stopTime = function myStopFunction() {
+  clearInterval(timer);
+}
